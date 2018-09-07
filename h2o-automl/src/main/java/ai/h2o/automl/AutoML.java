@@ -1234,6 +1234,14 @@ public final class AutoML extends Lockable<AutoML> implements TimedH2ORunnable {
     defaultSearchGLM(null);
 
     ///////////////////////////////////////////////////////////
+    // build default XGBoosts
+    ///////////////////////////////////////////////////////////
+
+//    defaultXGBoosts(true);
+
+    defaultXGBoosts(false);
+
+    ///////////////////////////////////////////////////////////
     // build five GBMs with Arno's default settings, using 1-grid
     // Cartesian searches into the same grid object as the search
     // below.
@@ -1245,18 +1253,19 @@ public final class AutoML extends Lockable<AutoML> implements TimedH2ORunnable {
     ///////////////////////////////////////////////////////////
     defaultDeepLearning();
 
-//    defaultXGBoosts(true);
 
-    defaultXGBoosts(false);
+    ///////////////////////////////////////////////////////////
+    // so some XGBoost hyperparameter search
+    ///////////////////////////////////////////////////////////
+
+//    defaultSearchXGBoost(null, true);
+
+    defaultSearchXGBoost(null, false);
 
     ///////////////////////////////////////////////////////////
     // build GBMs with the default search parameters
     ///////////////////////////////////////////////////////////
     defaultSearchGBM(null);
-
-//    defaultSearchXGBoost(null, true);
-
-    defaultSearchXGBoost(null, false);
 
     //
     // Build DL models

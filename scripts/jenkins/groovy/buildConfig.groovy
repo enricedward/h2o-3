@@ -47,7 +47,7 @@ class BuildConfig {
   public static final String BENCHMARK_MAKEFILE_PATH = 'ml-benchmark/jenkins/Makefile.jenkins'
 
   private static final Map EXPECTED_IMAGE_VERSIONS= [
-          (DEFAULT_IMAGE): 'docker.h2o.ai/opsh2oai/h2o-3-runtime@sha256:e107ae24e415a2b0ef3cf91b1bfbcb0622a537e3a9a6bc49a8820058d33ae02c',
+          (DEFAULT_IMAGE): 'docker.h2o.ai/opsh2oai/h2o-3-runtime@sha256:ca2c3d21fd84327c2525b975e82663ba32e43f1d4cbae8ff07ac102da4e03fdc',
 
           "docker.h2o.ai/opsh2oai/h2o-3-hadoop-hdp-2.2:49":     "docker.h2o.ai/opsh2oai/h2o-3-hadoop-hdp-2.2@sha256:9e2187b505df2055e148f89083a698c4542afbf1f9db6afa9abeccbd05a66088",
           "docker.h2o.ai/opsh2oai/h2o-3-hadoop-hdp-2.2-krb:49": "docker.h2o.ai/opsh2oai/h2o-3-hadoop-hdp-2.2-krb@sha256:d8820fd87deea14b0ae14e3b44f176de47efc1347c4301a2adb3799a85e762b4",
